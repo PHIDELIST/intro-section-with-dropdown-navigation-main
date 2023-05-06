@@ -31,8 +31,11 @@ h1{
     font-weight: 700;
 }
 header{
+    
     width: 100%;
     padding: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
 nav{
     margin-inline: 10px;
@@ -50,6 +53,10 @@ nav p{
 .mobile-img{
     width: 100%;
     height: auto;
+    flex: 1;
+}
+.desktop-img{
+    display: none;
 }
 .content{
     font-weight: 500;
@@ -78,8 +85,7 @@ footer{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    
     
 }
 footer img{  
@@ -87,4 +93,145 @@ footer img{
     height: auto;
     
 
+}
+.nav-list{
+    display: none;
+}
+.login-register{
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    /* For mobile phones: */
+    .menu{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        
+    }
+    main{
+        min-inline-size: 1440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .nav-list{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .nav-list li a{
+        padding: 0 20px;
+        text-decoration: none;
+        color: var(--medium-gray);
+
+    }
+    .login-register{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin-block: 10px;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+    }
+    .login-register li a{
+        padding: 0 20px;
+        text-decoration: none;
+        color: var(--medium-gray);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    h1{
+        margin-left: -15px;
+        color: var(--almost-black);
+        text-align: left;
+        font-size: 46pt;
+        font-weight: 700;
+    }
+    .content{
+        text-align: left;
+        line-height: 1.5;
+        margin-block: 2rem;
+    
+    }
+    .container-main{
+        margin-inline: auto;
+        max-width: 70%;
+        display: flex;
+        align-items: end;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap:6rem;
+        margin: 0 80px;
+        
+       
+
+    }
+    .container-left{
+        
+        /*for vertical alining
+        align-items: flex-start;
+        /*horizontal alining*/
+        width: 45%;
+        height: auto;
+        flex: 1;
+        
+    }
+    .mobile-img{
+        display: none;
+    }
+    .desktop-img{
+        display: block;
+        max-width: 45%;
+        height:auto;
+        
+        
+        flex: 1;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 5rem;
+        
+        
+    }
+    
+    .reg-btn{
+        display: block;
+        
+        color: var(--almost-white);
+        padding: 15px;
+        border-style: solid;
+        border-color: var(--medium-gray);
+        text-align: center;
+        margin-inline: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 40px;
+        align-items: center;
+        display: flex;
+        
+        border-radius: 15px;
+         
+    }
+    
+    .learn-btn{
+        margin-block: 3rem;
+        margin-left: 0;    }
 }
