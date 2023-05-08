@@ -135,6 +135,20 @@ footer img{
         color: var(--medium-gray);
 
     }
+    .select-features-company{
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .nav-select{
+        text-decoration: none;
+        padding: 0 20px;
+        border: none;
+        background: var(--almost-white);
+        color: var(--medium-gray);
+        font-size: 18px;
+        font-family: 'Epilogue', sans-serif;
+    }
     .login-register{
         display: flex;
         flex-direction: row;
